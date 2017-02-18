@@ -132,4 +132,4 @@ class Robo(object):
 
 	def clean_up(self):
 		pi.wave_clear()
-pi.stop() # Disconnect from Pi.
+                pi.stop() # Disconnect from Pi.
