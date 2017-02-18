@@ -5,6 +5,8 @@
 # command codes originally from http://www.aibohack.com/robosap/ir_codes.htm
 #
 
+import sys
+sys.path.insert(0,"/home/pi/")
 import time
 import pigpio # http://abyz.co.uk/rpi/pigpio/python.html
 
