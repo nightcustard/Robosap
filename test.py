@@ -4,10 +4,11 @@
 # command codes originally from http://www.aibohack.com/robosap/ir_codes.htm
 
 import robo
+import time
 
 rs=robo.Robo(21)	#create Robo object for GPIO 21
 rs.send_code(0xB1)	#Issue reset command
-# raw_input('Enter')
+time
 rs.send_code(0x81)	#Right arm up
 rs.send_code(0x81)
 rs.send_code(0x82)	#Right wrist out
