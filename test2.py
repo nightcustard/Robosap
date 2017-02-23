@@ -7,7 +7,7 @@ import robo
 import time
 
 rs=robo.Robo(21)	#create Robo object for GPIO 21
-rs.send_code(0xB1)	#Issue reset command
+rs.send_code(0xB1)	#Issue wakeup command
 time.sleep(10)
 rs.send_code(0x81)	#Right arm up
 time.sleep(1)
@@ -20,6 +20,12 @@ time.sleep(1)
 rs.send_code(0x82)      #
 time.sleep(1)
 rs.send_code(0x85)      #
+time.sleep(1)
+rs.send_code(0x86)      # walk fwd
+time.sleep(1)
+rs.send_code(0x86)      # walk fwd
+
+rs.send_code(0x86)      # walk fwd
 time.sleep(1)
 rs.send_code(0xA0)      #RightTurnStep
 time.sleep(2)
