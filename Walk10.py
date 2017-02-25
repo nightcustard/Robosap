@@ -10,16 +10,8 @@ rs=robo.Robo(21)	#create Robo object for GPIO 21
 
 rs.send_code(0x81)	#Right arm up
 time.sleep(1)
-rs.send_code(0x81)	#Right arm up
-time.sleep(1)
 
-rs.send_code(0x89)	#Left arm up
-time.sleep(1)
 rs.send_code(0x89)	#Left arm up
 time.sleep(1)
 
 rs.send_code(0x86)      # walk fwd
-#for i in range(0,10):
-#	rs.send_code(0x86)      # walk fwd
-#	time.sleep(1)
-	
