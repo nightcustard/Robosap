@@ -4,10 +4,7 @@
 # command codes originally from http://www.aibohack.com/robosap/ir_codes.htm
 
 import robo
-import time
+
 
 rs=robo.Robo(21)	#create Robo object for GPIO 21
-
-for i in range(0,4):
-	rs.send_code(0x88)      # turn left
-time.sleep(1)
+rs.send_code(0x88) # turn left
