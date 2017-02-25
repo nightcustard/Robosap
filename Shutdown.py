@@ -12,7 +12,7 @@ GPIO.setup(12, GPIO.IN)
 #In this case, no pull up/down is needed as the input is either 3v3 or 0v
 #GPIO 12 is connected to VRE on the Robosap motherboard which changes from 3v3
 #to 0v when 'Rosebud' sleep is executed.
-raw_input("Press Enter when ready\n>")
+#raw_input("Press Enter when ready\n>")
 #print "Waiting for falling edge on GPIO 12"
 
 try:
