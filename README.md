@@ -4,6 +4,15 @@ Pi Zero control of Robosapien v.1
 Circuit diagrams: http://markcra.com/blog/?page_id=52
 Hardware mods based upon: https://fortoffee.org.uk/2016/06/embedding-a-pizero-in-a-robosapien/
 
+Hardware mods by me
+
+Left eye blink:
+GPIO19 (set as current sink) connected via a 330 ohm  to (in parallel)  -- Left eye LED 1
+                                                                        -- Left eye LED 2
+                                                                        -- Left eye LED 3 (all three LEDs disconnected from motherboard)
+'Rosebud' shutdown:
+GPIO12 (set as input) connected via 2k7 to VRE pin on 'HEAD' connector
+
 The software is also heavily borrowed from https://fortoffee.org.uk/2016/06/embedding-a-pizero-in-a-robosapien/ and my grateful thanks goes to Carl Monk for all his work!
 
 'robo.py' defines the command codes and outputs the appropriate pulses to the IR receiver on the Robosapien.  It's been expanded by me to include the total command set.
