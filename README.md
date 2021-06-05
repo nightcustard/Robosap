@@ -1,9 +1,11 @@
 # Robosapien
 Pi Zero control of Robosapien v.1
 
-Cicuit diagrams: http://markcra.com/blog/?page_id=52
+Circuit diagrams: http://markcra.com/blog/?page_id=52
 
-The Pi Zero runs a Python script (~/Projects/Robosap/Shutdown.py) on startup  which looks for a falling edge on GPIO12. GPIO12 is connected to the VRE pin on the Robosapien head connector.  This signal sits at 3v3 when the Robosapien is powered up, but falls to zero when the 'Rosebud' shutdown command is acted upon.  'Shutdown' runs a 'sudo shutdown -h now' on detection of this falling edge.
+'robo.py' is the main programme
+
+The Pi Zero runs a Python script (Shutdown.py) on startup  which looks for a falling edge on GPIO12. GPIO12 is connected to the VRE pin on the Robosapien head connector.  This signal sits at 3v3 when the Robosapien is powered up, but falls to zero when the 'Rosebud' shutdown command is acted upon.  'Shutdown' runs a 'sudo shutdown -h now' on detection of this falling edge.
 The script is run at boot using systemd - the 'unit file' is called myshutdown.service and is in the /lib/systemd/system directory.
 
 If the Pi starts randomly shutting down, check the wire to GPIO12 is still connected to the Robosapien cct board (it fell off recently and caused shutdowns about a minute from startup).
