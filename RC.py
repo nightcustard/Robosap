@@ -151,27 +151,3 @@ exit()
 #print('remote[i+2]', remote[i+2])
 #print('remote[i+3]', remote[i+3])
 #print('remote[i+4]', remote[i+4])
-
-#ANSI escape codes
-
-#format is: \033[  Escape code; 1 = Style; 31 = Text colour (red); 40m = Background colour (black)
-#TEXT COLOR	TEXT STYLE		BACKGROUND COLOR
-#Black	30	No effect	0	Black	40
-#Red	31	Bold		1	Red		41
-#Green	32	Underline	2	Green	42
-#Yellow	33	Negative1	3	Yellow	43
-#Blue	34	Negative2	5	Blue	44
-#Purple	35					Purple	45
-#Cyan	36					Cyan	46
-#White	37					White	47
-
-#	Remote control allocation
-#fairy lights (+ mirror lights)on/off:		WIII-1
-#porch fairy lights on/off:					WIII-2
-#porch lights on/off:						WIII-3
-#Kitchen Amp on/off:						AEI-2
-#front room lamp on/off:					WIII-4
-#Ikea kitchen lights on/off:				WII-1
-#Xmas & front door lights on/off:			WII-2
-#Xmas tree lights on/off:					WII-3
-#Stairs fairy lights on/off:				WII-4
