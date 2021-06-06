@@ -2,8 +2,8 @@
 # coding=utf-8
 
 # RC.py (Robosapien Commander)
-# heavily based upon work by Carl Monk (@ForToffee)
-# based on work from http://playground.arduino.cc/Main/RoboSapienIR
+# partly based upon work by Carl Monk (@ForToffee)
+# partly based upon work from http://playground.arduino.cc/Main/RoboSapienIR
 # command codes originally from http://www.aibohack.com/robosap/ir_codes.htm
 
 import sys
@@ -136,7 +136,7 @@ else:
 		else:
 			inp = b-2
 			B = b+inp
-			G = command[B]  # Tells the print command below what the command is (eg) "fairy lights off"
+			G = command[B]  # Tells the print command below what the command is (eg) "dance"
 			index = command.index(G) # Gives the index number of the command in the command tuple
 			i = command[index+1]  # i is the start index position of the five remote control codes in the 'remote' tuple
 			c = remote[i]   
