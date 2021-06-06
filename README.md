@@ -14,6 +14,8 @@ GPIO19 (set as current sink) connected via a 330 ohm  to (in parallel)  -- Left 
 'Rosebud' shutdown:
 GPIO12 (set as input) connected via 2k7 to VRE pin on 'HEAD' connector
 
+Photos and circuit mods can be found under 'Robosap mods' in 'Issues'.
+
 The software is also heavily borrowed from https://fortoffee.org.uk/2016/06/embedding-a-pizero-in-a-robosapien/ and my grateful thanks goes to Carl Monk for all his work!
 
 'robo.py' defines the command codes and outputs the appropriate pulses to the IR receiver on the Robosapien.  It's been expanded by me to include the total command set.
